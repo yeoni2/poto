@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index_m.css" 
+    media="screen and (max-width:699px)">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>H&M</title>
+    <script src="https://kit.fontawesome.com/6855513f6a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/poto.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- 웹사이트(H&M) 로고 이미지 -->
+    <nav>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png"></a>
+        </div>
+        <!-- 상단 메뉴에 로그인,회원가입,장바구니 등이모티콘 -->
+        <ul class="emotion">
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-plus"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-circle-user"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+        </ul>
+        <!-- 상단 메뉴바 -->
+         <ul class="menu">
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>HOME DECORATION</li>
+            <li>CARE</li>
+            <li><a href="magajin.html">MAGAJIN</a></li>
+            <!-- 마우스 오버 내려오는 서브메뉴 -->
+            <li class="sub">
+                <ul>
+                    <li>
+                        <a href="men_top.html"><p>top</p></a>
+                    <li>
+                        <a href="men_bottom.html"><p>bottom</p></a>
+                    </li>
+                    <li>
+                        <a href="men_shoes.html"><p>shoes & acc</p></a>
+                    </li>
+                    <li>
+                        <a href="men_sport.html"><p>sports</p></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="women_top.html"><p>top</p></a>
+                    </li>
+                    <li>
+                        <a href="women_bottom.html"><p>bottom</p></a>
+                    </li>
+                    <li>
+                        <a href="women_shoes.html"><p>shoes & acc</p></a>
+                    </li>
+                    <li>
+                        <a href="women_sport.html"><p>sports</p></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="room.html"><p>room</p></a>
+                    </li>
+                    <li>
+                        <a href="kichen.html"><p>kichen</p></a>
+                    </li>
+                    <li>
+                        <a href="bathroom.html"><p>bathroom</p></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="care.html"><p>Repair & care</p></a>
+                    </li>
+                    <li>
+                        <a href="care_two.html"><p>Laundry & stains</p></a>
+                    </li>
+                </ul>
+            </li>
+        </ul> 
+    </nav>
+    <!-- 모바일 버전에서 생기는 메뉴(3선)이모티콘 -->
+    <article class="at0">
+        <ul class="bar" id="close" onclick="bar_func(this)">
+            <li class="bar1"></li>
+            <li class="bar2"></li>
+            <li class="bar3"></li>
+        </ul>
+    </article>
+    <!-- 모바일 버전 메뉴 이모티콘 클릭시 나오는 상세메뉴  -->
+    <article class="at1">
+        <p class="title">MEN</p>
+        <ul class="atMenu">
+            <li>
+                <p><a href="men_top.html">top</a></p>
+            </li>
+            <li>
+                <p><a href="men_bottom.html">bottom</a></p>
+            </li>
+            <li>
+                <p><a href="men_shoes.html">shoes & acc</a></p>
+            </li>
+            <li>
+                <p><a href="men_sport.html">sports</a></p>
+            </li>
+        </ul>
+        <p class="title">WOMEN</p>
+        <ul class="atMenu">
+            <li>
+                <p><a href="women_top.html">top</a></p>
+            </li>
+            <li>
+                <p><a href="women_bottom.html">bottom</a></p>
+            </li>
+            <li>
+                <p><a href="women_shoes.html">shoes & acc</a></p>
+            </li>
+            <li>
+                <p><a href="women_sport.html">sports</a></p>
+            </li>
+        </ul>
+        <p class="title">HOME DECORATION</p>
+        <ul class="atMenu">
+            <li>
+                <p><a href="room.html">room</a></p>
+            </li>
+            <li>
+                <p><a href="kichen.html">kitchen</a></p>
+            </li>
+            <li>
+                <p><a href="bathroom.html">bathroom</a></p>
+            </li>
+        </ul>
+        <p class="title">CARE</p>
+        <ul class="atMenu">
+            <li>
+                <p><a href="care.html">Repair & care</a></p>
+            </li>
+            <li>
+                <p><a href="care_two.html">Laundry & stains</a></p>
+            </li>
+        </ul>
+            <p class="title"><a href="magajin.html">MAGAJIN</a></p>       
+    </article>
+    <!-- 메인화면 슬라이드 사진 -->
+    <article class="picture">
+        <ul class="animation">
+          <li>
+            <img src="./img/main3.jfif" alt="">
+          </li>
+          <li>
+            <img src="./img/main2.jpg" alt="">
+          </li>
+          <li>
+            <img src="./img/main1.jfif" alt="">
+          </li>
+          <li>
+            <img src="./img/main3.jfif" alt="">
+          </li>  
+        </ul>
+    </article>
+    <!-- NEW 문구 -->
+    <p class="new"  data-aos="fade-up"
+    data-aos-duration="2000">NEW</p>
+    <!-- NEW메뉴 안에 MEN/WOMEN 선택하는 바 -->
+    <ul class="gender"  data-aos="fade-up"
+    data-aos-duration="2000">
+        <li class="gender0 gg">MEN</li>
+        <li class="gender1 gg">WOMEN</li>
+    </ul>
+    <!-- NEW메뉴 중 MEN 선택 시 나오는 이미지 -->
+   <div class="men"  data-aos="fade-up"
+   data-aos-duration="2000">
+       <ul class="boy">
+            <li>
+                <div class="pic">
+                    <img src="img/men.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL, XXL ]</p>
+                    <p>오버사이즈핏 발수 코팅 재킷</p>
+                    <p> ₩ 149,000</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men2.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ S, M, L, XL, XXL ]</p>
+                    <p>레귤러핏 자카드 니트 스웨터</p>
+                    <p> ₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men3.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ M, L, XL ]</p>
+                    <p>발수 코팅 아웃도어 팬츠</p>
+                    <p>  ₩119,000</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men4.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ S, M, L, XL, XXL ]</p>
+                    <p>플란넬 파자마</p>
+                    <p>  ₩ 49,900 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men5.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL, XXL ]</p>
+                    <p>레귤러핏 후드티</p>
+                    <p> ₩ 39,900 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men6.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ 28, 29, 30, 31, 32, 33, 34, 35 ]</p>
+                    <p>릴랙스핏 카고 팬츠</p>
+                    <p> ₩ 59,900 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men7.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ 39, 40, 41, 42, 43, 44 ]</p>
+                    <p>청키 첼시 부츠</p>
+                    <p>₩ 79,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men8.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ ONESIZE ]</p>
+                    <p>러닝 힙색</p>
+                    <p>₩ 14,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men9.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ S, M, L, XL, XXL ]</p>
+                    <p>릴랙스핏 플리스 오버셔츠</p>
+                    <p>₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="img/men10.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ONESIZE]</p>
+                    <p>리브니트 햇</p>
+                    <p>₩ 12,900</p>
+                </div>
+            </li>
+       </ul>
+   </div>
+   <!-- 왼쪽 화살표 이모티콘 -->
+     <div class="le" data-aos="fade-up"
+    data-aos-duration="2000">
+            <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <!-- 오른쪽 화살표 이모티콘 -->
+    <div class="ri" data-aos="fade-up"
+    data-aos-duration="2000">
+            <i class="fa-solid fa-chevron-right"></i>
+    </div> 
+    <!--  NEW메뉴 중 WOMEN 선택 시 나오는 이미지 -->
+     <div class="women">
+        <ul class="girl">
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>리브니트 스웨터</p>
+                    <p> ₩ 29,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes2.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>퍼프 재킷</p>
+                    <p> ₩ 69,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes3.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ 32, 34, 36, 38, 40, 42, 44, 46 ]</p>
+                    <p>코듀로이 팬츠</p>
+                    <p>  ₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes4.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ 35, 36, 37, 38, 39, 40, 41 ]</p>
+                    <p>레더 부츠</p>
+                    <p>  ₩ 129,000 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes5.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>리본 드레스</p>
+                    <p> ₩ 49,900 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes6.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>자카드 니트 스웨터</p>
+                    <p> ₩  39,900 </p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes7.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ 32, 34, 36, 38, 40, 42, 44, 46 ]</p>
+                    <p>와이드 카고 팬츠</p>
+                    <p>₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes8.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>오프숄더 바디콘 드레스</p>
+                    <p>₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes9.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[ XS, S, M, L, XL ]</p>
+                    <p>Satin pyjamas</p>
+                    <p>₩ 39,900</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic_two">
+                    <img src="./img/clothes10.jfif" alt="">
+                </div>
+                <div class="text">
+                    <p>[NOSIZE]</p>
+                    <p>페이크 퍼 백</p>
+                    <p>₩ 19,900</p>
+                </div>
+            </li>
+        </ul>
+    </div> 
+    <!-- WOMEN 클릭시 나오는 왼쪽 화살표 -->
+    <div class="left" data-aos="fade-up"
+    data-aos-duration="2000">
+            <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <!-- WOMEN 클릭시 나오는 오른쪽 화살표 -->
+    <div class="right" data-aos="fade-up"
+    data-aos-duration="2000">
+            <i class="fa-solid fa-chevron-right"></i>
+    </div> 
+    <!-- HOME DECORATION 항목 -->
+    <article class="home_deco"  data-aos="fade-up"
+    data-aos-duration="2000" data-aos-delay="200">
+    <!-- HOME DECORATION 항목:이미지 -->
+        <div>
+            <img src="./img/main.jpg">
+        </div>
+        <!-- HOME DECORATION 항목:글씨 -->
+      <div class="homeTex">
+            <p>HOME DECORATION</p>
+            <p>인테리어를 완성하고 싶나요?</p>
+            <p> H&M의 홈 데코 제품으로 더욱 세련된 인테리어를 연출해 보세요.</p>     
+            <p>H&M의 가구 컬렉션은 사이드 테이블과 라운지 체어를 비롯하여 조명도 선보입니다.</p> 
+            <p id="mm">more</p>
+            <!-- "MORE"클릭 하면 나오는 메뉴들(room, kichen, bathroom) -->
+            <ul class="homeTex_more">
+                <li>
+                    <a href="room.html"><p id="more0"></p></a>
+                    <a href="kichen.html"><p id="more1"></p></a>
+                    <a href="bathroom.html"><p id="more2"></p></a>
+                </li>
+            </ul>
+      </div>
+    </article>
+    <!-- sports 항목 -->
+    <p class="sport_text" data-aos="fade-right" data-aos-delay="200">
+        <span>H&M</span> SPORTS
+    </p>
+    <div class="sports" data-aos="fade-right" data-aos-delay="200">
+        <div class="sporst_first">
+            <img src="./img/sports.jfif" alt="">
+        </div>
+        <div class="sports_second">
+            <div>
+                <img src="./img/sports.jpg" alt="">
+            </div>
+            <div class="sports_ptag">
+                <p>
+                    반사 디테일이 부착된 가볍고 통기성 좋은 H&M Move
+                </p>
+                <p>
+                    빛나는 반사 프린트의 러닝 타이즈는 어두운 운동 환경에서도 가시성을 높여줍니다.
+                </p>
+                <p>
+                    따뜻하게 레이어드하고 당신의 러닝 크루와 함께 밖으로 나가세요.
+                </p>
+                <p id="mmm">more</p>
+                <ul class="sports_more"> 
+                    <li>
+                        <a href="men_sport.html"><p id="sport0"></p></a>
+                        <a href="women_sport.html"><p id="sport1"></p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- sports mobile ver. -->
+    <article class="sport_m" data-aos="fade-right" data-aos-delay="200">
+        <div class="sport_m_first">
+            <div>
+                <img src="./img/sports.jfif" alt="">
+            </div>
+            <div>
+                <img src="./img/sports.jpg" alt="">
+            </div>
+        </div>
+        <div class="sport_m_two">
+            <p>
+                반사 디테일이 부착된 가볍고 통기성 좋은 H&M Move
+            </p>
+            <p>
+                빛나는 반사 프린트의 러닝 타이즈는 어두운 운동 환경에서도 가시성을 높여줍니다.
+            </p>
+            <p>
+                따뜻하게 레이어드하고 당신의 러닝 크루와 함께 밖으로 나가세요.
+            </p>
+            <p id="mobile">more</p>
+            <ul class="sport_m_more"> 
+                <li>
+                    <a href="men_sport.html"><p id="sport_m0"></p></a>
+                    <a href="women_sport.html"><p id="sport_m1"></p></a>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <!-- take care 항목-->
+    <p class="care_text" data-aos="fade-left" data-aos-delay="200">
+        <span>H&M</span> TAKE CARE
+    </p>
+    <div class="care"  data-aos="fade-left" data-aos-delay="200">
+       <div class="care_first">
+            <div class="carePtag">
+                <p>다림질 팁, 건조법, 단추 꿰메기, 세탁법 등 옷을 더 오랫동안 입을 수 있는 방법과 수선, 리폼 그리고 업그레이드에 대한 팁을 확인하세요.
+                </p>
+                <p id="mmmm">more</p>
+                <ul class="care_more">
+                    <li>
+                    <a href="care.html"><p id="care0"></p></a>
+                    <a href="care_two.html"><p id="care1"></p></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="carepictwo">
+                <div>
+                    <img src="./img/care3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/care2.jpg" alt="">
+                </div>
+            </div>
+       </div>
+       <div class="care_second">
+            <img src="./img/care.jpg" alt="">
+       </div>
+    </div>
+    <!-- take care mobile ver. -->
+    <article class="take_mobile" data-aos="fade-left" data-aos-delay="200">
+        <div class="take_m_first">
+            <div>
+                <img src="./img/care3.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/care2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/care.jpg" alt="">
+            </div>
+        </div>
+        <div class="take_m_two">
+            <p>다림질 팁, 건조법, 단추 꿰메기, 세탁법 등 옷을 더 오랫동안 입을 수 있는 방법과 수선, 리폼 그리고 업그레이드에 대한 팁을 확인하세요.
+            </p>
+            <p id="take_m_more">more</p>
+                <ul class="take_m_moreTwo">
+                    <li>
+                    <a href="care.html"><p id="take_m0"></p></a>
+                    <a href="care_two.html"><p id="take_m1"></p></a>
+                    </li>
+                </ul>
+        </div>
+    </article>
+    <!-- H&M PLACE 항목 -->
+    <div class="searche"data-aos="fade-up">
+    <!-- H&M PLACE:글씨 -->
+        <span>H&M</span> PLACE
+    </div>
+    <!-- H&M PLACE: 첫번째 칸 -->
+    <article class="big1 big">
+           <div>
+               <p>H&M 수원 AK타운점</p>
+               <p>경기도 수원시 팔달구 덕영대로 924 AK플라자, 5층</p>
+           </div>
+        <div>
+            <p>H&M 수지 롯데몰점</p>
+            <p>경기도 용인시 수지구 성복2로 38 (B1F)</p>
+        </div>
+        <div>
+            <p>H&M 판교 현대점</p>
+            <p>경기도 성남시 분당구 판교역로146번길 20 판교 현대백화점 3F</p>
+        </div>
+        <div>
+            <p>H&M 스타필드 하남점</p>
+            <p>경기도 하남시 미사대로 750 스타필드 하남 1F</p>
+        </div>
+        <div>
+            <p>H&M 홈플러스부천상동점</p>
+            <p>경기도 부천시 길주로 118</p>
+        </div>
+        <div>
+            <p>H&M 잠실 롯데월드몰점</p>
+            <p>서울특별시 송파구 올림픽로 300 롯데월드몰 B1F-2F</p>
+        </div>
+    </article>
+    <!-- H&M PLACE: 두번째 칸 -->
+    <article class="big2 big">
+        <div>
+            <p>H&M 강남 신세계점</p>
+            <p>서울특별시 서초구 신반포로 176 지하1층 (파미에 스트리트)</p>
+        </div>
+        <div>
+            <p>H&M 스타필드 코엑스점</p>
+            <p>서울특별시 강남구 봉은사로 524 스타필드 코엑스몰점 B1F</p>
+        </div>
+         <div>
+             <p>H&M 영등포 타임스퀘어몰점</p>
+             <p>서울특별시 영등포구 영중로 15 1F</p>
+         </div>
+         <div>
+             <p>H&M 홍대점</p>
+             <p>서울특별시 마포구 어울마당로 107</p>
+         </div>
+         <div>
+            <p>H&M 명동중앙길점</p>
+            <p>서울특별시 중구 명동8길 3 H&M 명동중앙길점</p>
+        </div>
+        <div>
+            <p>H&M 신사 가로수점</p>
+            <p>서울특별시 강남구 가로수길 70</p>
+        </div>
+    </article>
+    <!-- H&M PLACE: 세번째 칸 -->
+    <article class="big3 big">
+        <div>
+            <p>H&M 용산 아이파크몰점</p>
+            <p>서울특별시 용산구 한강대로23길 55 1F</p>
+        </div>
+        <div>
+            <p>H&M 신도림 현대 D큐브점</p>
+            <p>서울특별시 구로구 경인로 662</p>
+        </div>
+        <div>
+            <p>H&M NC백화점강서점</p>
+            <p>서울특별시 강서구 강서로56길 17 NC 강서점</p>
+        </div>
+        <div>
+            <p>H&M 마리오몰점</p>
+            <p>서울특별시 금천구 벚꽃로 266 마리오아울렛 3관, 2층</p>
+        </div>
+        <div>
+            <p>H&M 송도트리플스트리트점</p>
+            <p>인천광역시 연수구 송도과학로16번길 33-1 1F-2F</p>
+        </div>
+        <div>
+           <p>H&M 인천 스퀘어원점</p>
+           <p>인천광역시 연수구 청능대로 210 연수 SQUARE1</p>
+       </div>
+    </article>
+    <!-- FOOTER 항목 -->
+    <article class="big4 big">
+        <!-- FOOTER: 왼쪽 항목 -->
+       <div>
+           <p>사업자등록번호: 220-87-83339</p>
+           <p>대표자 : 아담칼슨,아네타포쿠친스카</p>
+           <p>대표번호 080-822-0220 | info.kr@hm.com</p>
+           <p>법인명:에이치앤엠헤네스앤모리츠 주식회사</p>
+           <p>주소:서울특별시 강남구 영동대로 421, 9층 삼탄빌딩 (대치동) 06182</p>
+       </div>
+       <!-- FOOTER: 오른쪽 항목 -->
+       <div class="footer">
+        <div>
+            <p>카테고리</p>
+            <p>MEN</p>
+            <p>WOMEN</p>
+            <p>CARE</p>
+            <p>언론(MAGAJIN)</p>
+            <p>HOME DECORATION</p>
+        </div>
+        <div>
+            <p>고객지원</p>
+            <p>문의하기</p>
+            <p>사기신고</p>
+            <p>개인정보처리방침</p>
+        </div>
+        <div>
+            <p>기업정보</p>
+            <p>H&M 채용소개</p>
+            <p>H&M 회사소개</p>
+        </div>
+            <!-- FOOTER: SNS 이모티콘 -->
+           <div class="sns">
+               <div>
+                <i class="fa-brands fa-instagram"></i>
+               </div>
+               <div>
+                <i class="fa-brands fa-facebook"></i>
+               </div>
+               <div>
+                <i class="fa-brands fa-twitter"></i>
+               </div>
+           </div>
+        </div>
+    </article>
+    <!-- "TOP"클릭:올라가는 스크롤 -->
+    <div class="top">
+        <p>TOP</p>
+    </div>
+    <!-- 모바일 버전에서 H&M PLACE  -->
+    <article class="map">
+    <div>
+        <p>H&M 수원 AK타운점</p>
+        <p>경기도 수원시 팔달구 덕영대로 924 AK플라자, 5층</p>
+    </div>
+    <div>
+        <p>H&M 수지 롯데몰점</p>
+        <p>경기도 용인시 수지구 성복2로 38 (B1F)</p>
+    </div>
+    <div>
+        <p>H&M 판교 현대점</p>
+        <p>경기도 성남시 분당구 판교역로146번길 20 판교 현대백화점 3F</p>
+    </div>
+    <div>
+        <p>H&M 스타필드 하남점</p>
+        <p>경기도 하남시 미사대로 750 스타필드 하남 1F</p>
+    </div>
+    <div>
+        <p>H&M 홈플러스부천상동점</p>
+        <p>경기도 부천시 길주로 118</p>
+    </div>
+    <div>
+        <p>H&M 잠실 롯데월드몰점</p>
+        <p>서울특별시 송파구 올림픽로 300 롯데월드몰 B1F-2F</p>
+    </div>
+    <div>
+         <p>H&M 강남 신세계점</p>
+         <p>서울특별시 서초구 신반포로 176 지하1층 (파미에 스트리트)</p>
+    </div>
+    <div>
+         <p>H&M 스타필드 코엑스점</p>
+         <p>서울특별시 강남구 봉은사로 524 스타필드 코엑스몰점 B1F</p>
+    </div>
+    <div>
+          <p>H&M 영등포 타임스퀘어몰점</p>
+          <p>서울특별시 영등포구 영중로 15 1F</p>
+    </div>
+    <div>
+          <p>H&M 홍대점</p>
+          <p>서울특별시 마포구 어울마당로 107</p>
+    </div>
+    <div>
+         <p>H&M 명동중앙길점</p>
+         <p>서울특별시 중구 명동8길 3 H&M 명동중앙길점</p>
+    </div>
+    <div>
+         <p>H&M 신사 가로수점</p>
+         <p>서울특별시 강남구 가로수길 70</p>
+    </div>
+    <div>
+         <p>H&M 용산 아이파크몰점</p>
+         <p>서울특별시 용산구 한강대로23길 55 1F</p>
+    </div>
+    <div>
+        <p>H&M 신도림 현대 D큐브점</p>
+        <p>서울특별시 구로구 경인로 662</p>
+    </div>
+    <div>
+        <p>H&M NC백화점강서점</p>
+        <p>서울특별시 강서구 강서로56길 17 NC 강서점</p>
+    </div>
+    <div>
+        <p>H&M 마리오몰점</p>
+        <p>서울특별시 금천구 벚꽃로 266 마리오아울렛 3관, 2층</p>
+    </div>
+    <div>
+        <p>H&M 송도트리플스트리트점</p>
+        <p>인천광역시 연수구 송도과학로16번길 33-1 1F-2F</p>
+    </div>
+    <div>
+        <p>H&M 인천 스퀘어원점</p>
+        <p>인천광역시 연수구 청능대로 210 연수 SQUARE1</p>
+    </div>
+</article>
+</body>
+</html>
