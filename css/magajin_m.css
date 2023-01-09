@@ -1,0 +1,137 @@
+nav{
+    width: 90%; height: 50px;
+    border: 0px solid black;
+}
+nav> .logo{
+    width: 60%;
+}
+nav>.logo>img{
+    width: 100%; height: 100%;
+}
+nav> .emotion> li{
+    width: 20%; height: 90%;
+    border: 0px solid red;
+    font-size: 1.2rem;
+    line-height:40px;
+}
+nav> .emotion> li:first-child{
+    margin-left: 10%;
+}
+nav> .menu{
+    display: none;
+}
+.bar{
+    position: absolute;
+    top: 3px; left: 0;
+    color: white;
+    border: 0px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+.bar> .bar1,
+.bar> .bar2,
+.bar> .bar3{
+    width: 40px; height: 5px;
+    margin: 5px auto;
+    background: black;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.change> .bar1{
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+.change> .bar2{
+    opacity: 0;
+}
+.change> .bar3{
+    transform: rotate(45deg) translate(-6px, -5px);
+}
+.at0{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 3;
+    width: 6%; height: 40px;
+    border: 0px solid black;
+    margin-left: 93%;
+}
+.at1{
+    position: absolute;
+    top: 50px; left: 0%;
+    z-index: 2;
+    width: 100%; height: 650px;
+    border: 0px solid black;
+    background: black;
+    color: white;
+    text-indent: 10px;
+}
+.at1> .title{
+    width: 100%; height: 50px;
+    border: 0px solid white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.at1> .title> a{
+    color: white;
+}
+.at1> .title:hover{
+    font-size: 2rem;
+}
+.at1> p:first-child{
+    margin-top: 50px;
+}
+.at1> .atMenu,
+.at1> .atMenu> li> p{
+    width: 100%;
+    border: 0px solid red;
+}
+.at1> .atMenu> li{
+    width: 100%; 
+    cursor: pointer;
+}
+.at1> .atMenu> li> p> a{
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+}
+.at1> .atMenu> li:hover{
+    font-weight: bold;
+}
+.at3,
+.at4,
+.at5,
+.at6,
+.at7,
+.at8{
+    width: 100%; height: 600px;
+    border: 0px solid blue;
+}
+.at3> div,
+.at4> div,
+.at5> div,
+.at6> div,
+.at7> div,
+.at8> div{
+    width: 100%; height: 50%;
+    border: 0px solid red;
+}
+.at3> div:last-child,
+.at4> div:last-child,
+.at5> div:last-child,
+.at6> div:last-child,
+.at7> div:last-child,
+.at8> div:last-child{
+    width: 100%;
+    margin-top: 20px;
+}
+.at3> .right> p:first-child,
+.at4> .right> p:first-child,
+.at5> .right> p:first-child,
+.at6> .right> p:first-child,
+.at7> .right> p:first-child,
+.at8> .right> p:first-child{
+    font-size: 1.6rem;
+}
+

@@ -1,0 +1,114 @@
+.top{
+    width: 100%; height: 70px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin-top: 70px; 
+}
+.articl1{
+    width: 100%;  height: 3180px;
+    border: 0px solid black;
+}
+.articl1>.ment{
+    width: 100%; height: 70px;
+    border: 0px solid black;
+    margin-top: 20px;
+}
+.articl1>.ment> p{
+    width: 100%; height: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 0px solid black;
+}
+.articl1> .shadow{
+    position: relative;
+    width: 90%; 
+}
+.articl1> .shadow> .origin{
+    position: absolute;
+    top: 20px;
+    width: 100%; 
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.articl1> .sh3{
+    top: 80px; left: 4%;
+    height: 780px;
+    background: #62B6B7;
+}
+.articl1> .sh3> .ori3{
+    left: 3%;
+    height: 820px;
+    background:  #CFF5E7;
+}
+.articl1> .sh4{
+    top: 280px; left: 7%;
+    height: 660px;
+    background: #62B6B7;
+}
+.articl1> .sh4> .ori4{
+    right: 3%;
+    height: 700px;
+    background:  #CFF5E7;
+}
+.articl1> .sh5{
+    top: 480px; left: 4%;
+    height: 1060px;
+    background: #62B6B7;
+}
+.articl1> .sh5> .ori5{
+    left: 3%;
+    height: 1100px;
+    background:  #CFF5E7;
+}
+.articl1> .shadow> .origin> ul{
+    width: 20%; height: 100%;
+    border: 0px solid black;
+}
+.articl1> .shadow> .origin> ul> li{
+    width: 100%; height: 290px;
+    border: 0px solid black;
+}
+.articl1> .shadow> .origin> ul> li:last-child{
+    height: 390px;
+    margin-top: 20px;
+}
+.articl1> .sh5> .ori5> ul> li:last-child{
+    height: 580px;
+}
+.articl1> .shadow> .origin> ul> li> img{
+    width: 100%; height: 100%;
+}
+.articl1> .shadow> .origin> ul> li> video{
+    width: 100%; height: 100%;
+}
+.articl1> .shadow> .origin> ul> li> p{
+    width: 90%;
+    margin-left: 5%;  
+    text-align: center;
+}
+.articl1> .shadow> .origin> ul> li> p:first-child{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.articl1>.shadow>.origin>ul>li>p:nth-child(2){
+    margin-top: 20px;
+}
+.articl1>.shadow> .origin> ul> li> .text_bold{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.articl1> .sh3> .ori3> ul:nth-child(2)> li> p:last-child,
+.articl1> .sh4> .ori4> ul:nth-child(2)> li> p:last-child{
+    margin-top: 20px;
+}
+.articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(6),
+.articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(7),
+.articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(8){
+    margin-top: 10px;
+}
+.at1{
+    display: none;
+}

@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 슬라이드 이미지 ul 크기와 포지션 */
+.picture{
+    position: relative;
+    top: 0; left: 10%;
+    width: 80%; height: 600px;
+    border: 0px solid black;
+    overflow: hidden;
+}
+/* 슬라이드 애니메이션 */
+.picture> .animation{
+    position: absolute;
+    top: 0; left: 0;
+    width: 400%; height: 100%;
+    display: flex;
+    border: 0px solid black;
+    animation: animation_ani 10s linear infinite; 
+}
+@keyframes  animation_ani {
+    0% {left: 0%;}
+    10%{left: 0%;}
+    20%{left: -100%;}
+    30%{left: -100%;}
+    40%{left: -100%;}
+    50%{left: -100%;}
+    60%{left: -200%;}
+    70%{left: -200%;}
+    80%{left: -200%;}
+    90%{left: -300%;}
+    100% {left: -300%;}
+}
+/* 슬라이드 이미지 ul안에 li 크기 */
+.picture> .animation> li{
+    width: 25%; height: 100%;
+    border: 0px solid red;
+}
+/* 슬라이드 li 안에 이미지 크기  */
+.picture> .animation> li> img{
+   width: 100%; height: 100%;
+}
+/* "new" 글씨 */
+.new{
+    width: 15%; height: 60px;
+    border: 0px solid blue;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px; 
+    margin-left: 42%;
+}
+/* new의 메뉴(men, women) 전체 ul */
+.gender{
+    width: 20%; height: 50px;
+    border: 0px solid black;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+/* new의 메뉴(men, women)  li */
+.gender> li{
+    width: 40%; height: 40px;
+    border: 0px solid black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/* new메뉴 중 men의 배경색 */
+.gender> .gender0{
+    background: rgba(236, 229, 229, 0.76);
+    font-weight: bold;
+}
+/* men, women 마우스 오버 했을 때 */
+.gender> .gg:hover{
+    border: 1px solid rgba(236, 229, 229, 0.76);
+}
+/* 메뉴 men,women 클릭시 나오는 div  */
+.men,
+.women{
+    position: relative;
+    top: 50px; left: 5%;
+    width: 90%; height: 500px;
+    border: 0px solid black;
+    overflow: hidden;
+}
+.women{
+    display: none;
+}
+/* 메뉴 men,women 의  div 안에 이미지 */
+.men> .boy,
+.women> .girl{
+    position: absolute;
+    top: 0; left: 0;
+    width:250%; height: 100%;
+    display: flex; 
+}
+/* men, women 클릭시 나오는 이미지,
+마우스를 오버했을때  나오는 글씨가 들어있는 li  */
+.men> .boy> li,
+.women> .girl> li{
+    position: relative;
+    top: 0; left: 0;
+    width: 25%; height: 100%;
+    border: 0px solid black;
+    cursor: pointer; 
+    text-align: center;
+}
+/* men, women 클릭시 뜨는 이미지 */
+.men> .boy> li> .pic,
+.women> .girl> li> .pic_two{
+    width: 90%; height: 100%;
+    border: 0px solid black;
+    margin: 0 auto;
+}
+.men> .boy> li> .pic> img,
+.women> .girl> li> .pic_two> img{
+    width: 100%;
+    height: 100%;
+}
+/* men, women 이미지 마우스 오버했을때 글씨 들어가는 div */
+.men> .boy> li> .text,
+.women> .girl> li> .text{
+    position: absolute;
+    top: 0; left: 5%;
+    width: 90%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: none;
+}
+/* men, women 이미지 마우스 오버했을 때 글씨 */
+.men> .boy> li> .text> p,
+.women> .girl> li> .text> p{
+    width: 70%; height:40px;
+    border: 0px solid white;
+    text-align: center;
+    margin-left: 50px;
+}
+/* men, women 마우스 오버 햇을때 첫번째 글씨 위 여백 */
+.men> .boy> li> .text> p:first-child,
+.women> .girl> li> .text> p:first-child{
+    margin-top: 300px;
+}
+/* 마우스 오버 전에 글씨 안뜨게 하기 */
+.men> .boy> li:hover .text,
+.women> .girl> li:hover .text{
+    display: block;
+}
+/* 왼쪽, 오른쪽 화살표 */
+.le,
+.ri,
+.left,
+.right{
+    position: absolute;
+    width: 3%; height: 60px;
+    border: 0px solid blue;
+    text-align: center;
+    line-height: 60px;
+    font-size: 3rem;
+    color: rgba(161, 156, 156, 0.76);
+    cursor: pointer;
+}
+/* 화살표 위치 */
+.le,
+.left{
+    top: 1200px; left: 1%;
+}
+.ri,
+.right{
+    top: 1200px; right: 1%;
+}
+/* women을 클릭전엔 women의 화살표 안보이게 하기 */
+.left,
+.right{
+    display: none;
+}
+/* home deco */
+.home_deco{
+    position: relative;
+    top: 170px; left: 0;
+    width: 100%; height: 600px;
+    border: 0px solid black;
+}
+.home_deco> div,
+.home_deco>div>img{
+    width: 100%; height: 100%;
+}
+.home_deco> .homeTex{
+    position:absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.home_deco> .homeTex>p{
+    width: 60%; height: 60px;
+    border: 0px solid black;
+    margin: 0px auto;
+    font-size: 1.3rem;
+}
+.home_deco> .homeTex>p:first-child{
+    margin: 60px auto;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.home_deco> .homeTex> p:nth-child(5){
+    cursor: pointer;
+    width: 20%; 
+    background: rgba(0, 0, 0, 0.9);
+    line-height: 60px;
+}
+.home_deco> .homeTex> p:nth-child(5):hover{
+    background: white;
+    color: black;
+}
+.home_deco> .homeTex> .homeTex_more{
+    width: 20%; height: 40px;
+    border: 0px solid white;
+    margin: 20px auto;
+    display: none;
+}
+.home_deco> .homeTex> .homeTex_more> li{
+    width: 100%; height: 100%;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.home_deco> .homeTex> .homeTex_more> li> a{
+    width: 30%; height: 100%;
+    border: 0px solid white;
+}
+.home_deco> .homeTex> .homeTex_more> li> a> p {
+    width: 100%; height: 100%;
+    color: white;
+    background: black;
+}
+.home_deco> .homeTex> .homeTex_more>li> a:hover p{
+    color: black;
+    background: white;
+}
+/* sports */
+.sport_text{
+    width: 30%; height: 60px;
+    border: 0px solid black;
+    margin: 260px 63% 0 7%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.sport_text> span{
+    color: red;
+}
+.sports{
+    width: 80%; height: 490px;
+    border: 0px solid black;
+    margin-left: 7%;
+    display: flex;
+}
+.sports> .sporst_first{
+    width: 40%; height: 100%;
+    border: 0px solid black;
+}
+.sports> .sporst_first> img{
+    width: 100%; height: 100%;
+}
+.sports> .sports_second{
+    width: 50%; height: 100%;
+    border: 0px solid black;
+}
+.sports> .sports_second> div:first-child{
+    width: 100%; height: 220px;
+    border: 0px solid red;
+}
+.sports> .sports_second> div:first-child> img{
+    width: 100%; height: 100%;
+}
+.sports> .sports_second> .sports_ptag{
+    width: 90%; height: 210px;
+    margin-top: 40px;
+    margin-left: 10%;
+    border: 0px solid black;
+}
+.sports> .sports_second> .sports_ptag> p{
+    width: 100%; 
+    border: 0px solid black;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 1.3rem;
+    color: rgb(93, 89, 89);
+}
+.sports> .sports_second> .sports_ptag> #mmm{
+    width: 10%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sports> .sports_second> .sports_ptag> #mmm:hover,
+.sports> .sports_second> .sports_ptag> .sports_more> li>a:hover{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.sports> .sports_second> .sports_ptag> .sports_more{
+    width: 30%; 
+    display: none;
+}
+.sports> .sports_second> .sports_ptag> .sports_more> li{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sports> .sports_second> .sports_ptag> .sports_more> li> a{
+    width: 40%; height: 100%;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 1.3rem;
+    color: rgb(93, 89, 89);
+    margin-top: 10px;
+}
+/* clothes_care */
+.care_text{
+    width: 30%; height: 60px;
+    border: 0px solid black;
+    margin: 100px 7% 0 63%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.care_text> span{
+    color: red;
+}
+.care{
+    width: 80%; height: 490px;
+    border: 0px solid black;
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-between;
+}
+.care> .care_first{
+    width: 56%;
+}
+.care> .care_first> .carePtag{
+    width: 90%; height: 100px;
+    border: 0px solid black;
+    margin: 20px auto;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 1.3rem;
+    color: rgb(93, 89, 89);
+}
+.care> .care_first> .carePtag> #mmmm{
+    width: 10%;
+    margin-top:10px;
+    cursor: pointer;
+}
+.care> .care_first> .carePtag> #mmmm:hover,
+.care> .care_first> .carePtag> .care_more> li> a:hover
+{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.care> .care_first> .carePtag> .care_more{
+    width: 60%; height: 30px;
+    display: none;
+}
+.care> .care_first> .carePtag> .care_more> li{
+    display: flex;
+    justify-content: space-between;
+}
+.care> .care_first> .carePtag> .care_more> li> a{
+    width: 40%;
+    color: rgb(93, 89, 89);
+    margin-top: 10px;
+}
+.care> .care_first> .carepictwo{
+    width: 100%; height: 300px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.care> .care_first> .carepictwo> div{
+    width: 48%; height: 100%;
+}
+.care> .care_first> .carepictwo> div> img{
+    width: 100%; height: 100%;
+}
+.care> .care_second{
+    width: 40%; height: 100%;
+}
+.care> .care_second> img{
+    width: 100%; height: 100%;
+}
+.searche{
+    width: 40%; height: 50px;
+    border: 0px solid black;
+    margin: 130px auto;
+    font-size: 3rem;
+    font-family: hy견고딕;
+    text-align: center;
+}
+.searche> span{
+    color: red;
+}
+.big {
+    position: absolute;
+    width: 100%; height: 270px;
+    border:0px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.big> div{
+    width: 13%; height: 100%;
+    border: 0px solid black;
+}
+.big> div>p{
+    width: 95%;height: 160px;
+    border:0px solid blue;
+    margin-left: 3%;
+}
+.big1> div>p:first-child,
+.big2> div>p:first-child,
+.big3> div>p:first-child{
+    height: 70px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.big1 {
+    top: 3700px;
+    background: #F5EFE6;
+}
+.big2{
+    top: 3970px;
+    background: #E8DFCA;
+}
+.big3{
+    top: 4240px;
+    background: #AEBDCA;
+}
+.big4 {
+    top: 4600px;
+    height: 360px;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    flex-wrap: wrap;
+}
+.big4> div{
+    width: 49%; height: 100%;
+    border: 0px solid red;
+}
+.big4> div>p{
+    width: 80%;height:40px;
+    border:0px solid blue;
+    margin-left: 20%;
+    cursor: default;
+    font-family: 'NanumSquareRound';
+}
+.big4> div> p:first-child{
+    margin-top: 70px;
+}
+.big4> .footer{
+    display: flex;
+}
+.big4> .footer> div{
+    width: 20%; height: 210px;
+    border:0px solid red;
+    margin-top: 70px;
+    text-align: center;
+}
+.big4> .footer> div:first-child{
+    width: 22%;
+}
+.big4> .footer> div> p {
+    width: 100%; height: 30px;
+    border: 0px solid red;
+    cursor: pointer;
+    font-family: 'NanumSquareRound';
+}
+.big4> .footer> div> p:first-child{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: default;
+}
+.big4> .footer> .sns{
+    width:20%; height: 50px;
+    display: flex;
+    border:0px solid white;
+}
+.big4> .footer> .sns> div{
+    width: 30%; height: 100%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.top{
+    position: fixed;
+    top: 90%; left: 94%;
+    width: 4%; height: 60px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.top> p{
+    width: 100%; height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.at1,
+.map,
+.sport_m,
+.take_mobile{
+    display: none;
+}
+
