@@ -118,3 +118,7 @@ nav> .menu{
     width: 100%;
     text-indent: 0;
 }
+.one>.box> ul> li> p:nth-child(2),
+.two>.two_box> ul> li> p:nth-child(2){
+    height: 40px;
+}
