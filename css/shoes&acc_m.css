@@ -107,9 +107,14 @@ nav> .menu{
 }
 .one>.box> ul,
 .two>.two_box> ul{
-    width: 48%; height: 710px;
+    width: 48%; height: 490px;
+}
+.one> .box> ul> .img,
+.two>.two_box> ul> .two_img{
+    height: 400px;
 }
 .one>.box> ul> li> p,
 .two>.two_box> ul> li> p{
     width: 100%;
+    text-indent: 0;
 }
