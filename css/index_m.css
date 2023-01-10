@@ -189,7 +189,7 @@ nav> .menu{
     display: block;
 }
 .sport_m>.sport_m_first{
-    width: 100%; height: 330px;
+    width: 100%; height: 270px;
     display: flex;
 }
 .sport_m>.sport_m_first> div{
@@ -199,7 +199,7 @@ nav> .menu{
     width: 100%; height: 100%;
 }
 .sport_m>.sport_m_two{
-    width: 90%; height: 140px;
+    width: 90%; height: 200px;
     margin: 20px 7% 0 3%;
 }
 .sport_m>.sport_m_two> p{
@@ -228,8 +228,8 @@ nav> .menu{
     font-family: 'GangwonEdu_OTFBoldA';
 }
 .care_text{
-    width: 74%;
-    margin: 30px 0% 0 26%;
+    width: 80%;
+    margin: 30px 0% 0 20%;
     font-size: 2.6rem;
 }
 .take_mobile{
@@ -237,7 +237,7 @@ nav> .menu{
     display: block;
 }
 .take_mobile> .take_m_first{
-    width: 100%; height: 300px;
+    width: 100%; height:270px;
     display: flex;
     justify-content: space-between;
 }
@@ -248,8 +248,8 @@ nav> .menu{
     width: 100%; height: 100%;
 }
 .take_mobile> .take_m_two{
-    width:100%; height: 170px;
-    margin-top: 20px;
+    width:90%; height: 200px;
+    margin: 20px 7% 0 3%;
 }
 .take_mobile> .take_m_two> p{
     font-family: 'GangwonEdu_OTFBoldA';

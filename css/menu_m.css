@@ -101,10 +101,13 @@ nav> .menu{
     font-size: 1.2rem;
 }
 .one{
-    height: 2400px;
+    height: 1600px;
 }
 .one> ul{
-    width: 48%; height: 710px;
+    width: 48%; height: 490px;
+}
+.one> ul> .img{
+    height: 390px;
 }
 .one> ul>li>p{
     width: 100%;
