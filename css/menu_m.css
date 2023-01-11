@@ -107,11 +107,12 @@ nav> .menu{
     width: 48%; height: 490px;
 }
 .one> ul> .img{
-    height: 390px;
+    height: 370px;
 }
 .one> ul>li>p{
     width: 100%;
 }
-.one> ul>li>p:first-child{
+.one> ul>li>p:first-child,
+.one> ul>li>p:nth-child(2){
     height: 40px;
 }
