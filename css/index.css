@@ -322,13 +322,13 @@
     color: rgb(93, 89, 89);
 }
 /* sports "more"버튼 */
-.sports> .sports_second> .sports_ptag> #mmm{
+.sports> .sports_second> .sports_ptag> #sportsweb_more{
     width: 10%;
     margin-top: 10px;
     cursor: pointer;
 }
 /*  sports "more"버튼 마우스오버했을때, "more"클릭했을떄 상세메뉴 마우스 오버했을때 */
-.sports> .sports_second> .sports_ptag> #mmm:hover,
+.sports> .sports_second> .sports_ptag> #sportsweb_more:hover,
 .sports> .sports_second> .sports_ptag> .sports_more> li>a:hover{
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -386,14 +386,14 @@
     color: rgb(93, 89, 89);
 }
 /* take care "more"버튼 */
-.care> .care_first> .carePtag> #mmmm{
+.care> .care_first> .carePtag> #tak_more{
     width: 10%;
     margin-top:10px;
     cursor: pointer;
 }
 /* take care "more"버튼 마우스오버,
 take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각 li 마우스 오버했을때  */
-.care> .care_first> .carePtag> #mmmm:hover,
+.care> .care_first> .carePtag> #tak_more:hover,
 .care> .care_first> .carePtag> .care_more> li> a:hover
 {
     border: 1px solid #ccc;
