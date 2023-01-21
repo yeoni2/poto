@@ -1,3 +1,4 @@
+/* 모든 태그 */
 * {
     margin: 0; padding: 0;
     list-style: none;
@@ -5,7 +6,7 @@
 html, body {
     font-size: 16px; height: 100%;
 }
-/* 맨위 로고사진 있는 라인  */
+/* 상단 로고,이모티콘,메뉴 있는 라인  */
 nav{
     position: relative;
     top: 0; left: 0;
@@ -14,22 +15,24 @@ nav{
     display: flex;
     z-index: 10;
 }
-/* 로고 사진 */
+/* 로고 */
 nav> .logo{
     width: 20%; height: 100%;
     border:0px solid #ccc;
 }
+/* 로고 이미지 */
 nav>.logo> a> img{
     width: 40%; height: 60%;
     margin-top: 6%;
     margin-left: 20%;
 }
-/* 이모티콘 */
+/* 상단 이모티콘 */
 nav> .emotion{
     width: 80%; height: 50px;
     border: 0px solid black;
     display: flex;
 }
+/* 이모티콘 있는 li */
 nav> .emotion> li{
     width: 4%; height: 100%;
     border: 0px solid red;
@@ -38,13 +41,15 @@ nav> .emotion> li{
     font-size: 1rem;
     cursor: pointer;
 }
+/* 이모티콘 li 중에서 첫번째 */
 nav> .emotion> li:first-child{
     margin-left: 66%;
 }
+/* 이모티콘 마우스 오버 */
 nav> .emotion> li:hover{
     color: red;
 }
-/* 맨위 메뉴 */
+/* 상단에 있는 메뉴바 */
 nav> .menu{
     position: absolute;
     top: 50px; left: 30%;
@@ -55,9 +60,11 @@ nav> .menu{
     overflow: hidden; 
     transition: all 0.5s;
 }
+/* 메뉴 마우스 오버 했을때 길이 */
 nav> .menu:hover {
     height: 300px;
 }
+/* 메뉴에 있는 li */
 nav> .menu> li {
     width: 18%; height: 50px;
     border: 0px solid black;
@@ -65,20 +72,23 @@ nav> .menu> li {
     line-height: 50px;
     cursor: pointer;
 }
+/* 메뉴 li 마우스 오버 */
 nav>.menu> li:hover{
     font-weight: bold;
 }
+/* 메뉴 li 중 마우스 오버했을 때 마지막 li =서브메뉴 */
 nav>.menu> li:last-child:hover{
     font-weight: normal;
     cursor: default;
 }
-/* 탑다운 메뉴 */
+/* 서브 메뉴 */
 nav>.menu> .sub{
     width: 100%; height: 290px;
     border: 0px solid black;
     display: flex;
     background: white;
 }
+/* 서브메뉴 안에있는 ul(top,bottom 등이 들어있는 ul) */
 nav>.menu> .sub> ul{
     width: 10%; height: 240px;
     border: 0px solid red;
@@ -90,15 +100,17 @@ nav>.menu> .sub> ul:nth-child(4)
 {
     margin-left: 8%;
 }
-
+/* 서브메뉴 ul안에있는 li(top, bottom이 들어있는 ul 안에 li) */
 nav>.menu> .sub> ul> li{
     width: 100%; height: 60px;
     border: 0px solid red;
     cursor: pointer;
 }
+/* 서브메뉴 안에있는 글씨를 마우스오버했을때 */
 nav>.menu> .sub> ul> li:hover{
     font-weight: bold;
 }
+/* a태그 */
 a{
     text-decoration-line:none;
     color: black;

@@ -1,3 +1,4 @@
+/* 상단에 큰 글씨(LAUNDRY & STAINS) */
 .top{
     width: 100%; height: 70px;
     border-bottom: 3px solid black;
@@ -6,25 +7,30 @@
     font-size: 2.7rem;
     margin-top: 70px; 
 }
+/* 작은크기의 글씨와 사진과 글씨가 있는 3줄의 칸을 담는 사이즈 */
 .articl1{
     width: 100%;  height: 3180px;
     border: 0px solid black;
 }
+/* 상단에 두번째로 있는 작은 글씨: div class=ment */
 .articl1>.ment{
     width: 100%; height: 70px;
     border: 0px solid black;
     margin-top: 20px;
 }
+/* 작은글씨 div 안에있는 2줄 글씨인 p태그 */
 .articl1>.ment> p{
     width: 100%; height: 50%;
     text-align: center;
     font-size: 1.2rem;
     border: 0px solid black;
 }
+/* 사진과 글씨가 있는 네모박스 중 뒤에 있는 박스: 공통 div= shadow */
 .articl1> .shadow{
     position: relative;
     width: 90%; 
 }
+/* 사진과 글씨가 있는 네모박스 중 위에 있는 박스: 공통 div= origin  */
 .articl1> .shadow> .origin{
     position: absolute;
     top: 20px;
@@ -33,77 +39,94 @@
     display: flex;
     justify-content: space-around;
 }
+/* 사진과 글씨가 있는 네모박스 중 첫번째 줄에서 뒤에있는 박스 */
 .articl1> .sh3{
     top: 80px; left: 4%;
     height: 780px;
     background: #62B6B7;
 }
+/* 사진과 글씨가 있는 네모박스 중 첫번째 줄에서 위에있는 박스  */
 .articl1> .sh3> .ori3{
     left: 3%;
     height: 820px;
     background:  #CFF5E7;
 }
+/* 사진과 글씨가 있는 네모박스 중 두번째 줄에서 뒤에있는 박스 */
 .articl1> .sh4{
     top: 280px; left: 7%;
     height: 660px;
     background: #62B6B7;
 }
+/* 사진과 글씨가 있는 네모박스 중 두번째 줄에서 위에있는 박스  */
 .articl1> .sh4> .ori4{
     right: 3%;
     height: 700px;
     background:  #CFF5E7;
 }
+/* 사진과 글씨가 있는 네모박스 중 세번째 줄에서 뒤에있는 박스 */
 .articl1> .sh5{
     top: 480px; left: 4%;
     height: 1060px;
     background: #62B6B7;
 }
+/* 사진과 글씨가 있는 네모박스 중 세번째 줄에서 위에있는 박스  */
 .articl1> .sh5> .ori5{
     left: 3%;
     height: 1100px;
     background:  #CFF5E7;
 }
+/* 사진과 글씨가 있는 네모박스안에 사진과 글씨가 들어간 ul */
 .articl1> .shadow> .origin> ul{
     width: 20%; height: 100%;
     border: 0px solid black;
 }
+/* 사진과 글씨가 있는 네모박스안에 사진과 글씨가 들어간 ul 안에 li */
 .articl1> .shadow> .origin> ul> li{
     width: 100%; height: 290px;
     border: 0px solid black;
 }
+/* 사진과 글씨가 있는 네모박스안에 사진과 글씨가 들어간 ul 안에 li중 마지막 li의 크기와 위치 */
 .articl1> .shadow> .origin> ul> li:last-child{
     height: 390px;
     margin-top: 20px;
 }
+/* 세번째 줄에 있는 네모박스안에 사진과 글씨가 들어간 ul 안에 li중 마지막 li의 크기  */
 .articl1> .sh5> .ori5> ul> li:last-child{
     height: 580px;
 }
+/* 네모박스안에 있는 사진의 크기 */
 .articl1> .shadow> .origin> ul> li> img{
     width: 100%; height: 100%;
 }
+/* 네모박스안에 있는 동영상 크기 */
 .articl1> .shadow> .origin> ul> li> video{
     width: 100%; height: 100%;
 }
+/* 네모박스 안에 있는 글씨  */
 .articl1> .shadow> .origin> ul> li> p{
     width: 90%;
     margin-left: 5%;  
     text-align: center;
 }
+/* 네모박스 안에 있는 글씨 p태그중 첫번째 p태그 */
 .articl1> .shadow> .origin> ul> li> p:first-child{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.articl1>.shadow>.origin>ul>li>p:nth-child(2){
-    margin-top: 20px;
-}
+/* 네모박스 안에 있는 글씨중 두번째와 네번째 p태그의 글씨 */
 .articl1>.shadow> .origin> ul> li> .text_bold{
     font-weight: bold;
     font-size: 1.1rem;
 }
+/*
+네모박스안에 글씨 중 마지막 p태그 와 
+첫번째, 두번째 네모박스 안에 2번째 게시물 중 마지막p태그 */
+.articl1>.shadow>.origin>ul>li>p:nth-child(2),
 .articl1> .sh3> .ori3> ul:nth-child(2)> li> p:last-child,
 .articl1> .sh4> .ori4> ul:nth-child(2)> li> p:last-child{
     margin-top: 20px;
 }
+/* 세번째 네모박스 안에 2번째 게시물 중 6,7,8,번째 p태그 */
 .articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(6),
 .articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(7),
 .articl1> .sh5> .ori5> ul:nth-child(2)> li> p:nth-child(8){

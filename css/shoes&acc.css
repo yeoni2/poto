@@ -1,3 +1,4 @@
+/* 상단에 큰 글씨 */
 .top{
     width: 100%; height: 70px;
     border-bottom: 3px solid black;
@@ -6,6 +7,7 @@
     font-size: 3rem;
     margin-top: 70px;
 }
+/* shoes/acc 를 선택하는 메뉴바 */
 .choice{
     width: 20%; height: 50px;
     border: 0px solid black;
@@ -13,6 +15,7 @@
     justify-content: space-evenly;
     margin: 10px auto;
 }
+/* shoes/acc 글씨 p태그 */
 .choice> p{
     width: 40%; height: 100%;
     border: 0px solid black;
@@ -22,20 +25,23 @@
     font-size: 1.3rem;
     cursor: pointer;
 }
+/* 첫번째 p태그 shoes  */
 .choice> p:first-child{
     color: white;
     background: black;
 }
+/* p태그 오버했을때 */
 .choice> p:hover{
     border: 1px solid black;
 }
-/* 이미지 문구 시작 */
+/* 상품 */
 .one,
 .two {
     width: 95%; height: 2100px;
     border: 0px solid black;
     margin: 50px auto;
 }
+/* 상품이 들어가는 div=box */
 .one> .box,
 .two> .two_box{
     width: 100%; height: 100%;
@@ -43,15 +49,18 @@
     display: flex;
     justify-content: space-between;
 }
+/* 각각의 상품인 ul */
 .one> .box> ul,
 .two>.two_box> ul{
     width: 29%; height: 700px;
     border: 0px solid black;
 }
+/* 각 상품의 ul에 있는 li */
 .one> .box> ul> li,
 .two>.two_box> ul> li{
     width: 100%; height: 100px;
 }
+/* 각 상품의 사진 */
 .one> .box> ul> .img,
 .two>.two_box> ul> .two_img{
     position: relative;
@@ -60,35 +69,40 @@
     border: 0px solid black;
     cursor: pointer;
 }
+/* 각 상품의 일반사진과 마우스오버했을때 사진 이 들어가는 div */
 .one> .box> ul> .img> div,
 .two>.two_box> ul> .two_img> div{
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
 }
+/* 각 상품의 사진 크기 */
 .one> .box> ul> .img> div>img,
 .two>.two_box> ul> .two_img> div>img{
     width: 100%; height: 100%;
 }
+/* 마우스 오버했을때 뜨는 사진은 마우스 오버 전엔 안뜨게 하기 */
 .one> .box> ul> .img> .hover,
 .two>.two_box> ul> .two_img> .two_hover{
     display: none;
 }
+/* 마우스 오버했을때 다른 사진 뜨게하기 */
 .one> .box> ul> .img:hover .hover,
 .two>.two_box> ul> .two_img:hover .two_hover{
     display: block;
 }
+/* 상품 설명 p태그 */
 .one> .box> ul> li> p,
 .two>.two_box> ul> li> p{
     width: 80%; height: 30px;
     border: 0px solid blue;
     text-indent: 10px;
 }
+/* 상품 설명 중 마지막 p태그 */
 .one> .box>ul> li> p:last-child,
 .two>.two_box> ul> li> p:last-child{
     font-weight: bold;
 }
-
 .at1{
     display: none;
 }

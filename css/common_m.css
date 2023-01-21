@@ -1,0 +1,121 @@
+/* 상단 로고,이모티콘,메뉴 있는 라인  */
+nav{
+    width: 90%; height: 50px;
+    border: 0px solid black;
+}
+/* 로고 */
+nav> .logo{
+    width: 60%;
+}
+/* 로고 이미지 */
+nav>.logo>img{
+    width: 100%; height: 100%;
+}
+/* 이모티콘 있는 li */
+nav> .emotion> li{
+    width: 20%; height: 90%;
+    border: 0px solid red;
+    font-size: 1.2rem;
+    line-height:40px;
+}
+/* 이모티콘 있는 li 첫번째 */
+nav> .emotion> li:first-child{
+    margin-left: 10%;
+}
+nav> .menu{
+    display: none;
+}
+/* 모바일 버전 메뉴 삼선 이모티콘 */
+.at0{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 3;
+    width: 6%; height: 40px;
+    border: 0px solid black;
+    margin-left: 93%;
+}
+/* 모바일버전 삼선 ul  */
+.bar{
+    position: absolute;
+    top: 3px; left: 0;
+    color: white;
+    border: 0px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+/* 모바일버전 삼선표시  */
+.bar> .bar1,
+.bar> .bar2,
+.bar> .bar3{
+    width: 40px; height: 5px;
+    margin: 5px auto;
+    background: black;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+/* 삼선 첫번째 */
+.change> .bar1{
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+/* 삼선 두번째 */
+.change> .bar2{
+    opacity: 0;
+}
+/* 삼선 세번째 */
+.change> .bar3{
+    transform: rotate(45deg) translate(-6px, -5px);
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 */
+.at1{
+    position: absolute;
+    top: 50px; left: 0%;
+    z-index: 2;
+    width: 100%; height:600px;
+    border: 0px solid black;
+    background: black;
+    color: white;
+    text-indent: 10px;
+}
+/*모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 글씨(ex:men, women, home decoration 등)*/
+.at1> .title{
+    width: 100%; height: 50px;
+    border: 0px solid white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 링크 */
+.at1> .title> a{
+    color: white;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 마우스 오버했을때  */
+.at1> .title:hover{
+    font-size: 2rem;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 첫번째 글씨 */
+.at1> p:first-child{
+    margin-top: 50px;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 클릭시 나오는 메뉴, 메뉴글씨 p태그 */
+.at1> .atMenu,
+.at1> .atMenu> li> p{
+    width: 100%;
+    border: 0px solid red;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 클릭시 나오는 메뉴글씨 li */
+.at1> .atMenu> li{
+    width: 100%; 
+    cursor: pointer;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 클릭시 나오는 메뉴글씨 li 마우스오버 */
+.at1> .atMenu> li:hover{
+    font-weight: bold;
+}
+/* 모바일 버전 메뉴 클릭 했을때 나오는 상세메뉴 클릭시 나오는 메뉴링크 */
+.at1> .atMenu> li> p> a{
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+}

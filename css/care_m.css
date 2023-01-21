@@ -1,155 +1,70 @@
-nav{
-    width: 90%; height: 50px;
-    border: 0px solid black;
-}
-nav> .logo{
-    width: 60%;
-}
-nav>.logo>img{
-    width: 100%; height: 100%;
-}
-nav> .emotion> li{
-    width: 20%; height: 90%;
-    border: 0px solid red;
-    font-size: 1.2rem;
-    line-height:40px;
-}
-nav> .emotion> li:first-child{
-    margin-left: 10%;
-}
-nav> .menu{
-    display: none;
-}
-.bar{
-    position: absolute;
-    top: 3px; left: 0;
-    color: white;
-    border: 0px solid white;
-    display: inline-block;
-    cursor: pointer;
-}
-.bar> .bar1,
-.bar> .bar2,
-.bar> .bar3{
-    width: 40px; height: 5px;
-    margin: 5px auto;
-    background: black;
-    transition: all 0.5s;
-    border-radius: 10px;
-}
-.change> .bar1{
-    transform: rotate(-45deg) translate(-9px, 7px);
-}
-.change> .bar2{
-    opacity: 0;
-}
-.change> .bar3{
-    transform: rotate(45deg) translate(-6px, -5px);
-}
-.at0{
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 3;
-    width: 6%; height: 40px;
-    border: 0px solid black;
-    margin-left: 93%;
-}
-.at1{
-    position: absolute;
-    top: 50px; left: 0%;
-    z-index: 2;
-    width: 100%; height:600px;
-    border: 0px solid black;
-    background: black;
-    color: white;
-    text-indent: 10px;
-}
-.at1> .title{
-    width: 100%; height: 50px;
-    border: 0px solid white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 50px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.at1> .title> a{
-    color: white;
-}
-.at1> .title:hover{
-    font-size: 2rem;
-}
-.at1> p:first-child{
-    margin-top: 50px;
-}
-.at1> .atMenu,
-.at1> .atMenu> li> p{
-    width: 100%;
-    border: 0px solid red;
-}
-.at1> .atMenu> li{
-    width: 100%; 
-    cursor: pointer;
-}
-.at1> .atMenu> li:hover{
-    font-weight: bold;
-}
-.at1> .atMenu> li> p> a{
-    width: 100%;
-    color: white;
-    font-size: 1.2rem;
-}
+/* 작은크기의 글씨와 사진과 글씨가 있는 3줄의 칸을 담는 길이 변경 */
 .articl0{
     height: 6400px;
 }
+/* 상단에 두번째로 있는 작은 글씨 */
 .articl0> .ment{
     width: 95%; height: 100px;
     margin-left: 2%;
     font-size: 0.7rem;
 }
+/* 박스중 위에 있는 박스 */
 .articl0>.shadow>.origin{
     flex-wrap: wrap;
 }
+/* 박스 안에 사진과 글이 있는 ul */
 .articl0>.shadow>.origin>ul{
     width: 100%;
 }
+/* 첫번째 박스 중 뒤에있는 박스 */
 .articl0>.sh0{
     height: 1970px;
 }
+/* 첫번째 박스 중 위에있는 박스 */
 .articl0>.sh0>.ori0{
     height: 2000px;
 }
+/* 첫번째박스 안에 ul과 두번째 박스 안에 첫번째 ul*/
 .articl0>.sh0>.ori0>ul,
 .articl0>.sh1>.ori1>ul:first-child{
     height: 680px;
 }
+/* 첫번째 박스 ul중 2번쨰 */
 .articl0>.sh0>.ori0>ul:nth-child(2)
 {
     height: 560px;
 }
+/* 두번째 박스 중 뒤에있는 박스 */
 .articl0>.sh1{
     top: 260px;
     height: 1840px;
 }
+/* 두번째 박스 중 위에있는 박스 */
 .articl0>.sh1>.ori1{
     height: 1870px;
 }
+/* 두번째 박스에 있는 ul */
 .articl0>.sh1>.ori1> ul{
     height: 570px;
 }
+/* 두번째 박스 첫번째 ul */
 .articl0>.sh1>.ori1> ul:first-child{
     height: 670px;
 }
+/* 세번째 박스 중 뒤에있는 박스 */
 .articl0>.sh2{
     top: 420px;
     height: 2210px;
 }
+/* 세번째 박스 중 위에있는 박스 */
 .articl0> .sh2> .ori2{
     height: 2240px;
 }
+/* 세번째 박스에 있는 ul */
 .articl0> .sh2> .ori2> ul{
     height: 800px;
 }
+/* 세번째 박스에 있는 첫번째 ul */
 .articl0> .sh2> .ori2> ul:first-child{
     height: 600px;
 }
