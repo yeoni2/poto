@@ -311,8 +311,8 @@
 .sports> .sports_second> .sports_ptag> p{
     width: 100%; 
     border: 0px solid black;
-    font-family: 'GangwonEdu_OTFBoldA';
-    font-size: 1.3rem;
+    font-family: 'NanumSquareRound';
+    font-size: 0.8rem;
     color: rgb(93, 89, 89);
 }
 /* sports "more"버튼 */
@@ -341,8 +341,8 @@
 /* 상세메뉴 링크 */
 .sports> .sports_second> .sports_ptag> .sports_more> li> a{
     width: 40%; height: 100%;
-    font-family: 'GangwonEdu_OTFBoldA';
-    font-size: 1.3rem;
+    font-family: 'NanumSquareRound';
+    font-size: 0.8rem;
     color: rgb(93, 89, 89);
     margin-top: 10px;
 }
@@ -375,8 +375,8 @@
     width: 90%; height: 100px;
     border: 0px solid black;
     margin: 20px auto;
-    font-family: 'GangwonEdu_OTFBoldA';
-    font-size: 1.3rem;
+    font-family: 'NanumSquareRound';
+    font-size: 0.8rem;
     color: rgb(93, 89, 89);
 }
 /* take care "more"버튼 */
