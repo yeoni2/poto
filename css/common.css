@@ -5,6 +5,7 @@
 }
 html, body {
     font-size: 16px; height: 100%;
+    font-family: 'NanumSquareRound';
 }
 /* 상단 로고,이모티콘,메뉴 있는 라인  */
 nav{
@@ -17,14 +18,13 @@ nav{
 }
 /* 로고 */
 nav> .logo{
-    width: 20%; height: 100%;
-    border:0px solid #ccc;
+    width: 7%; height: 60px;
+    margin-top: 30px;
+    margin-left: 10%;
 }
 /* 로고 이미지 */
 nav>.logo> a> img{
-    width: 40%; height: 60%;
-    margin-top: 6%;
-    margin-left: 20%;
+    width: 100%; height: 100%;
 }
 /* 상단 이모티콘 */
 nav> .emotion{
@@ -52,7 +52,7 @@ nav> .emotion> li:hover{
 /* 상단에 있는 메뉴바 */
 nav> .menu{
     position: absolute;
-    top: 50px; left: 30%;
+    top: 50px; left: 36%;
     width: 70%; height: 50px;
     border: 0px solid black;
     display: flex;

@@ -5,34 +5,25 @@ nav{
 }
 /* 로고 */
 nav> .logo{
-    width: 60%;
+    width: 16%; height: 33px;
+    margin-top: 10px;
+    margin-left: 6%;
 }
 /* 로고 이미지 */
 nav>.logo>img{
     width: 100%; height: 100%;
 }
-/* 이모티콘 있는 li */
-nav> .emotion> li{
-    width: 20%; height: 90%;
-    border: 0px solid red;
-    font-size: 1.2rem;
-    line-height:40px;
-}
-/* 이모티콘 있는 li 첫번째 */
-nav> .emotion> li:first-child{
-    margin-left: 10%;
-}
+nav> .emotion,
 nav> .menu{
     display: none;
 }
 /* 모바일 버전 메뉴 삼선 이모티콘 */
 .at0{
     position: absolute;
-    top: 0; left: 0;
+    top: 0; left: 90%;
     z-index: 3;
     width: 6%; height: 40px;
     border: 0px solid black;
-    margin-left: 93%;
 }
 /* 모바일버전 삼선 ul  */
 .bar{

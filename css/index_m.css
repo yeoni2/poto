@@ -1,7 +1,17 @@
 /* 메인 화면 슬라이드 사진 사이즈와 위치 */
 .picture{
-    left: 5%;
-    width: 90%; height: 300px;
+    display: none;
+}
+.mobileverMain{
+    display: block;
+    width: 92%; height: 300px;
+    margin-left: 4%;
+}
+.mobileverMain> img{
+    width: 100%; height: 100%;
+}
+.new{
+    margin-top: 60px;
 }
 /* men/women 크기 */
 .gender{
@@ -52,12 +62,12 @@
 /* 왼쪽 화살표 */
 .le,
 .left{
-    top: 800px; left:3%;
+    top: 700px; left:3%;
 }
 /* 오른쪽 화살표 */
 .ri,
 .right{
-    top: 800px; right:6%;
+    top: 700px; right:6%;
 }
 /* HOME DECORATION 위치 */
 .home_deco{
@@ -71,7 +81,7 @@
 }
 /* HOME DECORATION p태그 첫번째 태그 */
 .home_deco> .homeTex>p:first-child{
-    margin: 60px auto;
+    margin: 40px auto;
     font-size: 2rem;
 }
 /* HOME DECORATION p태그 두번째 태그 */
@@ -97,136 +107,16 @@
     width: 60%; height: 40px;
     margin: 10px auto;
 }
-/* "h&m sports" 글씨 */
-.sport_text{
-    width: 70%; height: 60px;
-    margin: 200px 0% 0 0%;
-    font-size: 2.6rem;
-}
-/* 모바일버전 sports 항목 */
-.sport_m{
-    width: 100%; height: 490px;
-    display: block;
-}
-/* sports 에서 사진 */
-.sport_m>.sport_m_first{
-    width: 100%; height: 270px;
-    display: flex;
-}
-/* sports 에서 사진 담는 div */
-.sport_m>.sport_m_first> div{
-    width: 50%; height: 100%;
-}
-/* sports 에서 사진 크기 */
-.sport_m>.sport_m_first> div> img{
-    width: 100%; height: 100%;
-}
-/* sports 에서 글씨 */
-.sport_m>.sport_m_two{
-    width: 90%; height: 200px;
-    margin: 20px 7% 0 3%;
-}
-/* sports 에서 글씨 p태그 */
-.sport_m>.sport_m_two> p{
-    width: 100%;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-}
-/* sports 에서 "more"버튼 */
-.sport_m>.sport_m_two> #mobile{
-    width: 10%;
-    margin-top: 10px;
-    cursor: pointer;
-}
-/* sports 에서 "more"버튼 마우스오버했을때,
-sports 에서 "more"버튼 클릭시 나오는 상세메뉴 마우스 오버했을때*/
-.sport_m>.sport_m_two> #mobile:hover,
-.sport_m>.sport_m_two> .sport_m_more> li> a:hover{
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-/* sports 에서 "more"버튼 클릭시 나오는 상세메뉴  */
-.sport_m>.sport_m_two> .sport_m_more{
-    width: 20%; 
-    margin-top: 10px;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-    display: none;
-}
-/*sports 에서 "more"버튼 클릭시 나오는 상세메뉴 각각 li  */
-.sport_m>.sport_m_two> .sport_m_more> li{
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-/* "take care" 글씨 */
-.care_text{
-    width: 90%;
-    margin: 30px 0% 0 10%;
-    font-size: 2.6rem;
-}
-/* take care 모바일 버전 */
-.take_mobile{
-    width: 100%; height: 490px;
-    display: block;
-}
-/*  take care 모바일 버전에서 사진3개*/
-.take_mobile> .take_m_first{
-    width: 100%; height:270px;
-    display: flex;
-    justify-content: space-between;
-}
-/* take care 모바일 버전에서 사진3개 div */
-.take_mobile> .take_m_first> div{
-    width: 30%; height: 100%;
-}
-/* take care 모바일 버전 사진 크기 */
-.take_mobile> .take_m_first> div> img{
-    width: 100%; height: 100%;
-}
-/* take care 모바일 버전에서 글씨 */
-.take_mobile> .take_m_two{
-    width:90%; height: 200px;
-    margin: 20px 7% 0 3%;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-}
-/* take care 모바일 버전에서 "more"버튼 */
-.take_mobile> .take_m_two> #take_m_more{
-    width: 10%;
-    margin-top:10px;
-    cursor: pointer;
-}
-/* take care 모바일 버전에서 "more"버튼 마우스오버 했을때,
-take care 모바일 버전에서 "more"버튼 마우스 오버했을때 나오는 상세메뉴를 마우스오버했을때 */
-.take_mobile> .take_m_two> #take_m_more:hover,
-.take_mobile> .take_m_two> .take_m_moreTwo> li> a:hover{
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-/* take care 모바일 버전에서 "more"버튼 마우스 오버했을때 나오는 상세메뉴 */
-.take_mobile> .take_m_two> .take_m_moreTwo{
-    width: 47%; height: 30px;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-    display: none;
-    margin-top:10px;
-}
-/*  take care 모바일 버전에서 "more"버튼 마우스 오버했을때 나오는 상세메뉴 각각 li  */
-.take_mobile> .take_m_two> .take_m_moreTwo> li{
-    display: flex;
-    justify-content: space-between;
-}
 /* "h&m place" 글씨 */
 .searche{
     width: 70%; height: 60px;
     border: 0px solid black;
-    margin-top: 10px;
+    margin-top: 200px;
 }
 /* 모바일버전 h&m place */
 .map{
     position: absolute;
-    top: 3160px;
+    top: 1740px;
     width: 100%; height:900px;
     border:0px solid blue;
     display: flex;
@@ -255,7 +145,7 @@ take care 모바일 버전에서 "more"버튼 마우스 오버했을때 나오�
 /* footer 시작 */
 .big4{
     display: block;
-    top: 4200px;
+    top: 2690px;
     height: 540px;
 }
 /* footer div */

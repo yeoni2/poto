@@ -7,42 +7,14 @@
 }
 /* 슬라이드 이미지 ul 크기와 포지션 */
 .picture{
-    position: relative;
-    top: 0; left: 15%;
-    width: 70%; height: 600px;
-    border: 0px solid black;
-    overflow: hidden;
+    width: 88%; height: 490px;
+    margin-left: 6%;
 }
-/* 슬라이드 애니메이션 */
-.picture> .animation{
-    position: absolute;
-    top: 0; left: 0;
-    width: 400%; height: 100%;
-    display: flex;
-    border: 0px solid black;
-    animation: animation_ani 10s linear infinite; 
+.picture> img{
+    width: 100%; height: 100%;
 }
-@keyframes  animation_ani {
-    0% {left: 0%;}
-    10%{left: 0%;}
-    20%{left: -100%;}
-    30%{left: -100%;}
-    40%{left: -100%;}
-    50%{left: -100%;}
-    60%{left: -200%;}
-    70%{left: -200%;}
-    80%{left: -200%;}
-    90%{left: -300%;}
-    100% {left: -300%;}
-}
-/* 슬라이드 이미지 ul안에 li 크기 */
-.picture> .animation> li{
-    width: 25%; height: 100%;
-    border: 0px solid red;
-}
-/* 슬라이드 li 안에 이미지 크기  */
-.picture> .animation> li> img{
-   width: 100%; height: 100%;
+.mobileverMain{
+    display: none;
 }
 /* "new" 글씨 */
 .new{
@@ -52,9 +24,9 @@
     line-height: 60px;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 20px; 
+    margin-top: 60px;
     margin-left: 42%;
+    color: red;
 }
 /* new의 메뉴(men, women) 전체 ul */
 .gender{
@@ -87,7 +59,7 @@
 .men,
 .women{
     position: relative;
-    top: 50px; left: 5%;
+    top: 20px; left: 6%;
     width: 90%; height: 500px;
     border: 0px solid black;
     overflow: hidden;
@@ -171,11 +143,11 @@
 /* 화살표 위치 */
 .le,
 .left{
-    top: 1200px; left: 1%;
+    top: 970px; left: 2%;
 }
 .ri,
 .right{
-    top: 1200px; right: 1%;
+    top: 970px; right: 1%;
 }
 /* women을 클릭전엔 women의 화살표 안보이게 하기 */
 .left,
@@ -185,9 +157,8 @@
 /* home deco 전체적인 틀 */
 .home_deco{
     position: relative;
-    top: 170px; left: 0;
-    width: 100%; height: 600px;
-    border: 0px solid black;
+    top: 100px; left: 0;
+    width: 100%; height: 370px;
 }
 /* home deco에 div와 백그라운드 이미지  */
 .home_deco> div,
@@ -212,231 +183,15 @@
 }
 /* home deco 글씨 p태그 첫번째 */
 .home_deco> .homeTex>p:first-child{
-    margin: 60px auto;
+    margin: 40px auto;
     font-size: 3rem;
     font-weight: bold;
-}
-/* home deco 글씨 p태그 다섯번째 */
-.home_deco> .homeTex> p:nth-child(5){
-    cursor: pointer;
-    width: 20%; 
-    background: rgba(0, 0, 0, 0.9);
-    line-height: 60px;
-}
-/* home deco 글씨 p태그 다섯번째 "more"버튼 마우스 오버했을 때 */
-.home_deco> .homeTex> p:nth-child(5):hover{
-    background: white;
-    color: black;
-}
-/* home deco "more"버튼 클릭시 나오는 상세메뉴 */
-.home_deco> .homeTex> .homeTex_more{
-    width: 20%; height: 40px;
-    border: 0px solid white;
-    margin: 20px auto;
-    display: none;
-}
-/* home deco "more"버튼 클릭시 나오는 상세메뉴의 li */
-.home_deco> .homeTex> .homeTex_more> li{
-    width: 100%; height: 100%;
-    line-height: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-/* home deco "more"버튼 클릭시 나오는 상세메뉴 링크 a태그 */
-.home_deco> .homeTex> .homeTex_more> li> a{
-    width: 30%; height: 100%;
-    border: 0px solid white;
-}
-/* home deco "more"버튼 클릭시 나오는 상세메뉴 글씨인 p태그 */
-.home_deco> .homeTex> .homeTex_more> li> a> p {
-    width: 100%; height: 100%;
-    color: white;
-    background: black;
-}
-/* home deco "more"버튼 클릭시 나오는 상세메뉴 마우스 오버했을때 바뀌는 배경색과 글씨색 */
-.home_deco> .homeTex> .homeTex_more>li> a:hover p{
-    color: black;
-    background: white;
-}
-/* "h&m sports" 글씨 */
-.sport_text{
-    width: 30%; height: 60px;
-    border: 0px solid black;
-    margin: 260px 63% 0 7%;
-    font-size: 3rem;
-    font-weight: bold;
-}
-/* sports문구 h&m글씨 빨간색 */
-.sport_text> span{
-    color: red;
-}
-/* sports 항목 div */
-.sports{
-    width: 80%; height: 490px;
-    border: 0px solid black;
-    margin-left: 7%;
-    display: flex;
-}
-/* sports 큰이미지 들어가는 div */
-.sports> .sporst_first{
-    width: 40%; height: 100%;
-    border: 0px solid black;
-}
-/* sports 이미지 크기 */
-.sports> .sporst_first> img{
-    width: 100%; height: 100%;
-}
-/* sports 글씨,작은 이미지 들어가는 부분 */
-.sports> .sports_second{
-    width: 50%; height: 100%;
-    border: 0px solid black;
-}
-/* sports 작은이미지 */
-.sports> .sports_second> div:first-child{
-    width: 100%; height: 220px;
-    border: 0px solid red;
-}
-/* sports 작은이미지 크기 */
-.sports> .sports_second> div:first-child> img{
-    width: 100%; height: 100%;
-}
-/* sports 글씨 div */
-.sports> .sports_second> .sports_ptag{
-    width: 90%; height: 210px;
-    margin-top: 40px;
-    margin-left: 10%;
-    border: 0px solid black;
-}
-/* sports 글씨 p태그 */
-.sports> .sports_second> .sports_ptag> p{
-    width: 100%; 
-    border: 0px solid black;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-    color: rgb(93, 89, 89);
-}
-/* sports "more"버튼 */
-.sports> .sports_second> .sports_ptag> #sportsweb_more{
-    width: 10%;
-    margin-top: 10px;
-    cursor: pointer;
-}
-/*  sports "more"버튼 마우스오버했을때, "more"클릭했을떄 상세메뉴 마우스 오버했을때 */
-.sports> .sports_second> .sports_ptag> #sportsweb_more:hover,
-.sports> .sports_second> .sports_ptag> .sports_more> li>a:hover{
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-/* "more"클릭했을떄 상세메뉴 */
-.sports> .sports_second> .sports_ptag> .sports_more{
-    width: 30%; 
-    display: none;
-}
-/* "more"클릭했을떄 상세메뉴 각각 li */
-.sports> .sports_second> .sports_ptag> .sports_more> li{
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-/* 상세메뉴 링크 */
-.sports> .sports_second> .sports_ptag> .sports_more> li> a{
-    width: 40%; height: 100%;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-    color: rgb(93, 89, 89);
-    margin-top: 10px;
-}
-/* "take h&m care" 글씨 */
-.care_text{
-    width: 30%; height: 60px;
-    border: 0px solid black;
-    margin: 100px 7% 0 63%;
-    font-size: 3rem;
-    font-weight: bold;
-}
-/* "take" 빨강색 폰트 */
-.care_text> span{
-    color: red;
-}
-/* take care 큰 div */
-.care{
-    width: 80%; height: 490px;
-    border: 0px solid black;
-    margin-left: 9%;
-    display: flex;
-    justify-content: space-between;
-}
-/* take care에서 글씨, 이미지2개 */
-.care> .care_first{
-    width: 56%;
-}
-/* take care에서 글씨 */
-.care> .care_first> .carePtag{
-    width: 90%; height: 100px;
-    border: 0px solid black;
-    margin: 20px auto;
-    font-family: 'NanumSquareRound';
-    font-size: 0.8rem;
-    color: rgb(93, 89, 89);
-}
-/* take care "more"버튼 */
-.care> .care_first> .carePtag> #tak_more{
-    width: 10%;
-    margin-top:10px;
-    cursor: pointer;
-}
-/* take care "more"버튼 마우스오버,
-take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각 li 마우스 오버했을때  */
-.care> .care_first> .carePtag> #tak_more:hover,
-.care> .care_first> .carePtag> .care_more> li> a:hover
-{
-    border: 1px solid #ccc;
-    border-radius: 20px;
-}
-/* take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 */
-.care> .care_first> .carePtag> .care_more{
-    width: 60%; height: 30px;
-    display: none;
-}
-/* take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 li */
-.care> .care_first> .carePtag> .care_more> li{
-    display: flex;
-    justify-content: space-between;
-}
-/* take care "more" 버튼 클릭했을때 나오는 상세메뉴 링크 */
-.care> .care_first> .carePtag> .care_more> li> a{
-    width: 40%;
-    color: rgb(93, 89, 89);
-    margin-top: 10px;
-}
-/* take care 작은 이미지2개 */
-.care> .care_first> .carepictwo{
-    width: 100%; height: 300px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-}
-/* take care 작은이미지 2개 각각 div */
-.care> .care_first> .carepictwo> div{
-    width: 48%; height: 100%;
-}
-/*  take care 작은 이미지 크기 */
-.care> .care_first> .carepictwo> div> img{
-    width: 100%; height: 100%;
-}
-/*  take care 큰 이미지 */
-.care> .care_second{
-    width: 40%; height: 100%;
-}
-/*  take care 큰 이미지 크기 */
-.care> .care_second> img{
-    width: 100%; height: 100%;
 }
 /* "H&M PLACE" 글씨 */
 .searche{
     width: 40%; height: 50px;
     border: 0px solid black;
-    margin: 130px auto;
+    margin: 180px auto;
     font-size: 3rem;
     font-family: hy견고딕;
     text-align: center;
@@ -474,21 +229,21 @@ take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각
     font-weight: bold;
 }
 .big1 {
-    top: 3700px;
+    top: 1900px;
     background: #F5EFE6;
 }
 .big2{
-    top: 3970px;
+    top: 2170px;
     background: #E8DFCA;
 }
 .big3{
-    top: 4240px;
+    top: 2440px;
     background: #AEBDCA;
 }
 /* footer */
 .big4 {
-    top: 4600px;
-    height: 360px;
+    top: 2800px;
+    height: 300px;
     justify-content: space-between;
     background: black;
     color: white;
@@ -509,7 +264,7 @@ take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각
 }
 /* footer 첫번째글씨 위치 */
 .big4> div> p:first-child{
-    margin-top: 70px;
+    margin-top: 60px;
 }
 /* footer 각각(카테고리, 고객지원, 기업정보) */
 .big4> .footer{
@@ -519,7 +274,7 @@ take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각
 .big4> .footer> div{
     width: 20%; height: 210px;
     border:0px solid red;
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
 }
 /* footer 각각(카테고리, 고객지원, 기업정보) div 첫번째 */
@@ -531,7 +286,6 @@ take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각
     width: 100%; height: 30px;
     border: 0px solid red;
     cursor: pointer;
-    font-family: 'NanumSquareRound';
 }
 /* footer 각각(카테고리, 고객지원, 기업정보) p태그 첫번째 */
 .big4> .footer> div> p:first-child{
@@ -570,9 +324,7 @@ take care "more" 버튼 마우스 오버했을 때 나오는 상세메뉴 각각
     font-weight: bold;
 }
 .at1,
-.map,
-.sport_m,
-.take_mobile{
+.map{
     display: none;
 }
 
